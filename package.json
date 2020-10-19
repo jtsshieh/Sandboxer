@@ -1,0 +1,23 @@
+{
+  "name": "sandboxer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run lint && npx tsc && node dist/index.js",
+    "lint": "npx prettier src/**/*.ts --write"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/centra": "^2.2.0",
+    "@types/node": "^14.11.10",
+    "@types/prettier": "^2.1.5",
+    "centra": "^2.4.2",
+    "dotenv": "^8.2.0",
+    "eris": "^0.13.3",
+    "prettier": "^2.1.2",
+    "typescript": "^4.0.3"
+  }
+}
