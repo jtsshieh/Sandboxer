@@ -13,6 +13,10 @@ bot.on('ready', () => {
     console.log('Bot ready!');
 });
 
+bot.on('error', (error) => {
+    console.log(error)
+})
+
 bot.on('messageCreate', async (message: Message) => {
     const prefix = '!';
     if (!message.content.startsWith(prefix)) return;
